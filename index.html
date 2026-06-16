@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshini Charitable Trust | Connect with Love</title>
+    <meta name="description" content="Roshini Charitable Trust - Connect with Love. Your Small Step, Their Big Smile. Helping those forgotten by society in Trichy and Srirangam.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10b981', // Emerald 500
+                        secondary: '#047857', // Emerald 700
+                        accent: '#f59e0b', // Amber 500
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <div class="sticky top-0 z-[60] w-full flex flex-col">
+    <!-- Emergency Alert Bar -->
+    <div id="emergency-alert" style="display: none;" class="bg-red-600 text-white text-center py-2 px-4 text-sm font-semibold justify-center items-center gap-2 transition-all duration-300">
+        <span class="animate-pulse"><i class="fas fa-tint"></i></span>
+        <span id="emergency-message">Loading alert...</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="w-full z-50 glass shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">R</div>
+                    <span class="font-bold text-2xl text-gray-900 tracking-tight">Roshini <span class="text-primary">Charitable Trust</span></span>
+                </div>
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="index.html" class="text-primary font-bold">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition-colors font-medium">About Us</a>
+                    <a href="request-help.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Request Help</a>
+                    <a href="celebrate.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Celebrate</a>
+                    <a href="volunteer.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Volunteer</a>
+                    <a href="#donate" class="bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full font-semibold transition-all transform hover:scale-105 shadow-md">Donate</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-primary bg-primary/10">Home</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">About Us</a>
+                <a href="request-help.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Request Help</a>
+                <a href="celebrate.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Celebrate</a>
+                <a href="volunteer.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Volunteer</a>
+                <a href="#donate" class="block px-3 py-3 text-center rounded-md text-base font-bold text-white bg-primary mt-4">Donate</a>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero_background_1781627184264.png" alt="Happy Children" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary border border-primary/30 font-semibold text-sm mb-6 uppercase tracking-wider backdrop-blur-sm">Roshini Charitable Trust</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                Connect with Love.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-300">Your Small Step, Their Big Smile.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto font-light">
+                Bridging the gap between compassionate donors and the most vulnerable lives. Join us in creating a lasting, visible impact.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#donate" class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(16,185,129,0.3)]">
+                    Make a Donation
+                </a>
+                <a href="volunteer.html" class="bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/30 px-8 py-4 rounded-full font-bold text-lg transition-all">
+                    Volunteer With Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Intro Section -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute -right-24 top-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Who We Are</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">A pillar of support in Trichy and Srirangam</h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        At Roshini Charitable Trust, our foundation is built on the simple yet powerful philosophy: <span class="font-semibold text-primary">"Connect with Love."</span> For over 8 years, we have been serving those forgotten by society, from providing meals to the homeless to securing education for children.
+                    </p>
+                    <a href="about.html" class="inline-flex items-center gap-2 text-primary hover:text-secondary font-bold text-lg transition-colors group">
+                        Read Our Full Story <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-orange-50 rounded-2xl p-6 text-center hover:shadow-lg transition-shadow border border-orange-100">
+                        <div class="w-14 h-14 mx-auto rounded-full bg-orange-100 text-orange-500 flex items-center justify-center text-2xl mb-4">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4 class="text-3xl font-bold text-gray-900 mb-1">5000+</h4>
+                        <p class="text-gray-600 font-medium">Meals Provided</p>
+                    </div>
+                    <div class="bg-blue-50 rounded-2xl p-6 text-center hover:shadow-lg transition-shadow border border-blue-100 mt-8">
+                        <div class="w-14 h-14 mx-auto rounded-full bg-blue-100 text-blue-500 flex items-center justify-center text-2xl mb-4">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h4 class="text-3xl font-bold text-gray-900 mb-1">130+</h4>
+                        <p class="text-gray-600 font-medium">Children Educated</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / CTAs -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">How You Can Help</h2>
+                <h3 class="text-4xl font-bold text-gray-900">Make an Impact Today</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Request Help Card -->
+                <div class="bg-gradient-to-br from-red-500 to-red-700 rounded-3xl p-10 text-white relative overflow-hidden group shadow-xl">
+                    <div class="absolute -right-10 -top-10 w-48 h-48 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                    <i class="fas fa-ambulance text-6xl text-white/30 absolute right-8 bottom-8 group-hover:scale-110 transition-transform duration-500"></i>
+                    
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block backdrop-blur-sm border border-white/20">Emergency</span>
+                    <h4 class="text-3xl font-bold mb-4">Request Help</h4>
+                    <p class="text-red-100 mb-8 max-w-sm text-lg">
+                        See someone in need? Report hungry individuals, abandoned animals, or families in crisis. Our Field Crew will respond within hours.
+                    </p>
+                    <a href="request-help.html" class="inline-block bg-white text-red-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                        Report an Issue <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Celebrate Card -->
+                <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl p-10 text-white relative overflow-hidden group shadow-xl">
+                    <div class="absolute -right-10 -top-10 w-48 h-48 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                    <i class="fas fa-gift text-6xl text-white/30 absolute right-8 bottom-8 group-hover:scale-110 transition-transform duration-500"></i>
+                    
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-semibold mb-6 inline-block backdrop-blur-sm border border-white/20">Spread Joy</span>
+                    <h4 class="text-3xl font-bold mb-4">Celebrate with Service</h4>
+                    <p class="text-orange-50 mb-8 max-w-sm text-lg">
+                        Make your special day unforgettable. Instead of a party, book your birthday or anniversary to provide meals or plant trees.
+                    </p>
+                    <a href="celebrate.html" class="inline-block bg-white text-orange-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                        Book Celebration <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10" id="donate">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">R</div>
+                        <span class="font-bold text-2xl text-white tracking-tight">Roshini <span class="text-primary">Charitable Trust</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Your small step can create their big smile. Join us in making a difference in the lives of those forgotten by society.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 border-b border-gray-800 pb-2">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="request-help.html" class="text-gray-400 hover:text-primary transition-colors">Request Help</a></li>
+                        <li><a href="celebrate.html" class="text-gray-400 hover:text-primary transition-colors">Celebrate</a></li>
+                        <li><a href="volunteer.html" class="text-gray-400 hover:text-primary transition-colors">Volunteer</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 border-b border-gray-800 pb-2">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>23, Under Ground, Sathish complex, Mambazhasalai, Trichy – 620 005</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400">
+                            <i class="fas fa-phone text-primary"></i>
+                            <span>+91 99444 70511, +91 82202 89504</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <span>roshinicharitabletrust917@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 Roshini Charitable Trust. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for mobile menu -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+
+    <!-- Script for Emergency Banner -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4LqWDC5VX3wfmviVHG0y1XonV8oY3iAlomsi-1V9Lv6PKhEjOta8YsCmMtzwpQS7TLYJcfhx4aJys/pub?gid=1239458077&single=true&output=csv';
+            try {
+                const response = await fetch(sheetUrl);
+                const data = await response.text();
+                const rows = data.split('\n').map(row => row.split(','));
+                if (rows.length >= 2) {
+                    const status = rows[1][0].trim().toLowerCase();
+                    const message = rows[1].slice(1).join(',').trim().replace(/^"|"$/g, '');
+                    
+                    const alertBar = document.getElementById('emergency-alert');
+                    const messageSpan = document.getElementById('emergency-message');
+                    
+                    if (status === 'on') {
+                        messageSpan.textContent = message;
+                        alertBar.style.display = 'flex';
+                    } else {
+                        alertBar.style.display = 'none';
+                    }
+                }
+            } catch (error) {
+                console.error('Error fetching emergency status:', error);
+            }
+        });
+    </script>
+</body>
+</html>
