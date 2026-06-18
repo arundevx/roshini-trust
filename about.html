@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Roshini Charitable Trust</title>
-    <meta name="description" content="Learn about Roshini Charitable Trust, our journey, and the leaders behind the mission to connect with love.">
+    <meta name="description" content="Learn about Roshini Charitable Trust (roshinicharitabletrust), our journey, and the leaders behind the mission to connect with love.">
+    <meta name="keywords" content="roshini charitable trust, roshinicharitabletrust, NGO in Trichy, charity Srirangam, connect with love, about us">
+    <link rel="icon" type="image/png" href="images/rct-icon.png">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About Us | Roshini Charitable Trust">
+    <meta property="og:description" content="Learn about Roshini Charitable Trust, our journey, and the leaders behind the mission to connect with love.">
+    <meta property="og:url" content="https://roshinicharitabletrust.org/about.html">
+    <meta property="og:type" content="website">
     <!-- Tailwind CSS -->
     <script src="tailwindcss.js"></script>
     <script>
@@ -26,7 +34,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -36,58 +45,83 @@
         }
     </style>
 </head>
+
 <body class="font-sans text-gray-800 antialiased bg-gray-50">
 
     <div class="sticky top-0 z-[60] w-full flex flex-col">
-    <!-- Emergency Alert Bar -->
-    <div id="emergency-alert" style="display: none;" class="bg-red-600 text-white text-center py-2 px-4 text-sm font-semibold justify-center items-center gap-2 transition-all duration-300">
-        <span class="animate-pulse"><i class="fas fa-tint"></i></span>
-        <span id="emergency-message">Loading alert...</span>
-    </div>
+        <!-- Emergency Alert Bar -->
+        <div id="emergency-alert" style="display: none;"
+            class="bg-red-600 text-white text-center py-2 px-4 text-sm font-semibold justify-center items-center gap-2 transition-all duration-300">
+            <span class="animate-pulse"><i class="fas fa-tint"></i></span>
+            <span id="emergency-message">Loading alert...</span>
+        </div>
 
-    <!-- Navigation -->
-    <nav class="w-full z-50 glass shadow-sm transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
-                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">R</div>
-                    <span class="font-bold text-2xl text-gray-900 tracking-tight">Roshini <span class="text-primary">Charitable Trust</span></span>
-                </div>
-                <div class="hidden lg:flex space-x-6 items-center">
-                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-primary font-bold">About Us</a>
-                    <a href="request-help.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Request Help</a>
-                    <a href="celebrate.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Celebrate</a>
-                    <a href="volunteer.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Volunteer</a>
-                    <a href="#donate" class="bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full font-semibold transition-all transform hover:scale-105 shadow-md">Donate</a>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
+        <!-- Navigation -->
+        <nav class="w-full z-50 glass shadow-sm transition-all duration-300" id="navbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer"
+                        onclick="window.location.href='index.html'">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
+                            R</div>
+                        <span class="font-bold text-2xl text-gray-900 tracking-tight">Roshini <span
+                                class="text-primary">Charitable Trust</span></span>
+                    </div>
+                    <div class="hidden lg:flex space-x-6 items-center">
+                        <a href="index.html"
+                            class="text-gray-600 hover:text-primary transition-colors font-medium">Home</a>
+                        <a href="about.html" class="text-primary font-bold">About Us</a>
+                        <a href="gallery.html"
+                            class="text-gray-600 hover:text-primary transition-colors font-medium">Gallery</a>
+                        <a href="request-help.html"
+                            class="text-gray-600 hover:text-primary transition-colors font-medium">Request Help</a>
+                        <a href="celebrate.html"
+                            class="text-gray-600 hover:text-primary transition-colors font-medium">Celebrate</a>
+                        <a href="volunteer.html"
+                            class="text-gray-600 hover:text-primary transition-colors font-medium">Volunteer</a>
+                        <a href="#donate"
+                            class="bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full font-semibold transition-all transform hover:scale-105 shadow-md">Donate</a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="lg:hidden flex items-center">
+                        <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
-            <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Home</a>
-                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-primary bg-primary/10">About Us</a>
-                <a href="request-help.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Request Help</a>
-                <a href="celebrate.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Celebrate</a>
-                <a href="volunteer.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Volunteer</a>
-                <a href="#donate" class="block px-3 py-3 text-center rounded-md text-base font-bold text-white bg-primary mt-4">Donate</a>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
+                <div class="px-4 pt-2 pb-6 space-y-2">
+                    <a href="index.html"
+                        class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Home</a>
+                    <a href="about.html"
+                        class="block px-3 py-3 rounded-md text-base font-bold text-primary bg-primary/10">About Us</a>
+                    <a href="gallery.html"
+                        class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Gallery</a>
+                    <a href="request-help.html"
+                        class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Request
+                        Help</a>
+                    <a href="celebrate.html"
+                        class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Celebrate</a>
+                    <a href="volunteer.html"
+                        class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Volunteer</a>
+                    <a href="#donate"
+                        class="block px-3 py-3 text-center rounded-md text-base font-bold text-white bg-primary mt-4">Donate</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </div>
 
     <!-- Header Section -->
     <section class="relative pt-24 pb-12 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary border border-primary/20 font-semibold text-sm mb-4 uppercase tracking-wider">Our Story</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">Connect with <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-600">Love</span></h1>
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary border border-primary/20 font-semibold text-sm mb-4 uppercase tracking-wider">Our
+                Story</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">Connect with <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-600">Love</span></h1>
         </div>
     </section>
 
@@ -96,11 +130,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div class="relative">
-                    <div class="absolute -inset-4 bg-primary/10 rounded-[2rem] transform -rotate-3 transition-transform hover:rotate-0 duration-500"></div>
-                    <img src="images/about_us_image_1781627199790.png" alt="Volunteers Planting Trees" class="relative rounded-2xl shadow-2xl object-cover h-[500px] w-full" />
+                    <div
+                        class="absolute -inset-4 bg-primary/10 rounded-[2rem] transform -rotate-3 transition-transform hover:rotate-0 duration-500">
+                    </div>
+                    <img src="images/about1.jpeg" alt="Volunteers Planting Trees"
+                        class="relative rounded-2xl shadow-2xl object-cover h-[500px] w-full" />
                     <!-- Floating badge -->
-                    <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
-                        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-primary text-2xl">
+                    <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce"
+                        style="animation-duration: 3s;">
+                        <div
+                            class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-primary text-2xl">
                             <i class="fas fa-leaf"></i>
                         </div>
                         <div>
@@ -109,19 +148,26 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div>
-                    <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">A pillar of support in Trichy and Srirangam</h3>
+                    <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">A pillar of support in
+                        Trichy and Srirangam</h3>
                     <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        At Roshini Charitable Trust, our foundation is built on the simple yet powerful philosophy: <span class="font-semibold text-primary">"Connect with Love."</span> For over 8 years, we have been a pillar of support in Trichy and Srirangam, serving those forgotten by society.
+                        At Roshini Charitable Trust, our foundation is built on the simple yet powerful philosophy:
+                        <span class="font-semibold text-primary">"Connect with Love."</span> For over 8 years, we have
+                        been a pillar of support in Trichy and Srirangam, serving those forgotten by society.
                     </p>
                     <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Our mission spans across providing meals to the homeless, securing the education of children, and restoring nature through our green initiatives. We act as a vital bridge between compassionate donors and the most vulnerable lives, ensuring that every act of kindness creates a lasting, visible impact.
+                        Our mission spans across providing meals to the homeless, securing the education of children,
+                        and restoring nature through our green initiatives. We act as a vital bridge between
+                        compassionate donors and the most vulnerable lives, ensuring that every act of kindness creates
+                        a lasting, visible impact.
                     </p>
-                    
+
                     <div class="grid grid-cols-2 gap-6 mt-8">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-500 text-xl flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-500 text-xl flex-shrink-0">
                                 <i class="fas fa-utensils"></i>
                             </div>
                             <div>
@@ -130,7 +176,8 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 text-xl flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 text-xl flex-shrink-0">
                                 <i class="fas fa-book-reader"></i>
                             </div>
                             <div>
@@ -151,22 +198,30 @@
                 <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Our Journey</h2>
                 <h3 class="text-4xl font-bold text-gray-900 mb-6">A life-changing movement</h3>
                 <p class="text-lg text-gray-600">
-                    "Our story began 8 years ago as a small act of kindness in the sacred streets of Srirangam, Trichy. What started as a simple mission to feed a few hungry souls has now evolved into a life-changing movement."
+                    "Our story began 8 years ago as a small act of kindness in the sacred streets of Srirangam, Trichy.
+                    What started as a simple mission to feed a few hungry souls has now evolved into a life-changing
+                    movement."
                 </p>
             </div>
-            
+
             <div class="relative">
                 <!-- Timeline Line -->
-                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200 rounded-full"></div>
-                
+                <div
+                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200 rounded-full">
+                </div>
+
                 <div class="space-y-12">
                     <!-- Event 1 -->
                     <div class="relative flex flex-col md:flex-row items-center justify-between group">
                         <div class="md:w-5/12 text-center md:text-right md:pr-8 mb-6 md:mb-0">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">The Beginning</h4>
-                            <p class="text-gray-600">Launched with a primary focus on roadside food distribution in Srirangam, starting with a handful of dedicated members.</p>
+                            <h4
+                                class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                                The Beginning</h4>
+                            <p class="text-gray-600">Launched with a primary focus on roadside food distribution in
+                                Srirangam, starting with a handful of dedicated members.</p>
                         </div>
-                        <div class="w-12 h-12 rounded-full border-4 border-white bg-primary shadow-lg flex items-center justify-center z-10 text-white group-hover:scale-110 transition-transform">
+                        <div
+                            class="w-12 h-12 rounded-full border-4 border-white bg-primary shadow-lg flex items-center justify-center z-10 text-white group-hover:scale-110 transition-transform">
                             <i class="fas fa-seedling"></i>
                         </div>
                         <div class="md:w-5/12 md:pl-8 mt-6 md:mt-0"></div>
@@ -175,10 +230,14 @@
                     <!-- Event 2 -->
                     <div class="relative flex flex-col md:flex-row-reverse items-center justify-between group">
                         <div class="md:w-5/12 text-center md:text-left md:pl-8 mb-6 md:mb-0">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Growing Impact</h4>
-                            <p class="text-gray-600">Our network grew to hundreds of volunteers across the Trichy region, spreading compassion and practical help.</p>
+                            <h4
+                                class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                                Growing Impact</h4>
+                            <p class="text-gray-600">Our network grew to hundreds of volunteers across the Trichy
+                                region, spreading compassion and practical help.</p>
                         </div>
-                        <div class="w-12 h-12 rounded-full border-4 border-white bg-primary shadow-lg flex items-center justify-center z-10 text-white group-hover:scale-110 transition-transform">
+                        <div
+                            class="w-12 h-12 rounded-full border-4 border-white bg-primary shadow-lg flex items-center justify-center z-10 text-white group-hover:scale-110 transition-transform">
                             <i class="fas fa-users"></i>
                         </div>
                         <div class="md:w-5/12 md:pr-8 mt-6 md:mt-0"></div>
@@ -187,10 +246,14 @@
                     <!-- Event 3 -->
                     <div class="relative flex flex-col md:flex-row items-center justify-between group">
                         <div class="md:w-5/12 text-center md:text-right md:pr-8 mb-6 md:mb-0">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Expanding Horizons</h4>
-                            <p class="text-gray-600">Proudly supported the education of 130+ children, planted hundreds of trees, and adopted 80+ elderly people in need.</p>
+                            <h4
+                                class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                                Expanding Horizons</h4>
+                            <p class="text-gray-600">Proudly supported the education of 130+ children, planted hundreds
+                                of trees, and adopted 80+ elderly people in need.</p>
                         </div>
-                        <div class="w-12 h-12 rounded-full border-4 border-white bg-primary shadow-lg flex items-center justify-center z-10 text-white group-hover:scale-110 transition-transform">
+                        <div
+                            class="w-12 h-12 rounded-full border-4 border-white bg-primary shadow-lg flex items-center justify-center z-10 text-white group-hover:scale-110 transition-transform">
                             <i class="fas fa-hands-holding-child"></i>
                         </div>
                         <div class="md:w-5/12 md:pl-8 mt-6 md:mt-0"></div>
@@ -199,10 +262,14 @@
                     <!-- Event 4 -->
                     <div class="relative flex flex-col md:flex-row-reverse items-center justify-between group">
                         <div class="md:w-5/12 text-center md:text-left md:pl-8 mb-6 md:mb-0">
-                            <h4 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Today</h4>
-                            <p class="text-gray-600">We stand as a 24/7 support system, managing food rescue missions, animal welfare, and emergency blood coordination.</p>
+                            <h4
+                                class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                                Today</h4>
+                            <p class="text-gray-600">We stand as a 24/7 support system, managing food rescue missions,
+                                animal welfare, and emergency blood coordination.</p>
                         </div>
-                        <div class="w-12 h-12 rounded-full border-4 border-white bg-primary shadow-lg flex items-center justify-center z-10 text-white group-hover:scale-110 transition-transform">
+                        <div
+                            class="w-12 h-12 rounded-full border-4 border-white bg-primary shadow-lg flex items-center justify-center z-10 text-white group-hover:scale-110 transition-transform">
                             <i class="fas fa-heartbeat"></i>
                         </div>
                         <div class="md:w-5/12 md:pr-8 mt-6 md:mt-0"></div>
@@ -222,9 +289,11 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 <!-- Founder -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300 group">
+                <div
+                    class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300 group">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="images/founder_portrait_1781627216071.png" alt="Founder Roshini" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+                        <img src="images/roshini-founder.jpeg" alt="Founder Roshini"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-4 left-6 text-white">
                             <h4 class="text-2xl font-bold">Roshini</h4>
@@ -233,19 +302,26 @@
                     </div>
                     <div class="p-8 relative">
                         <i class="fas fa-quote-left text-4xl text-gray-100 absolute top-4 left-4"></i>
-                        <p class="text-gray-600 italic relative z-10 text-lg mb-6 line-clamp-4 hover:line-clamp-none transition-all">
-                            "I started Roshini Charitable Trust with a simple mission: no one should go hungry and no dream should be left behind. My vision is to bridge the gap between those who want to help and those in need. I believe that by sharing what we have, we can light up lives. Let's connect with love and create a lasting change together!"
+                        <p
+                            class="text-gray-600 italic relative z-10 text-lg mb-6 line-clamp-4 hover:line-clamp-none transition-all">
+                            "I started Roshini Charitable Trust with a simple mission: no one should go hungry and no
+                            dream should be left behind. My vision is to bridge the gap between those who want to help
+                            and those in need. I believe that by sharing what we have, we can light up lives. Let's
+                            connect with love and create a lasting change together!"
                         </p>
-                        <a href="https://instagram.com/roshini_trust_founder" target="_blank" class="inline-flex items-center gap-2 text-primary hover:text-secondary font-medium transition-colors">
-                            <i class="fab fa-instagram text-xl"></i> @roshini_trust_founder
+                        <a href="https://www.instagram.com/roshini_jesus_23?igsh=aHliNWszdHI0c3Bk" target="_blank"
+                            class="inline-flex items-center gap-2 text-primary hover:text-secondary font-medium transition-colors">
+                            <i class="fab fa-instagram text-xl"></i> @roshini_jesus_23
                         </a>
                     </div>
                 </div>
 
                 <!-- Secretary -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300 group">
+                <div
+                    class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300 group">
                     <div class="h-64 overflow-hidden relative">
-                        <img src="images/secretary_portrait_1781627228183.png" alt="Secretary K. Kavibharathi" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                        <img src="images/kavi1.png" alt="Secretary K. Kavibharathi"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-4 left-6 text-white">
                             <h4 class="text-2xl font-bold">K. Kavibharathi</h4>
@@ -254,11 +330,21 @@
                     </div>
                     <div class="p-8 relative">
                         <i class="fas fa-quote-left text-4xl text-gray-100 absolute top-4 left-4"></i>
-                        <p class="text-gray-600 italic relative z-10 text-lg mb-6 line-clamp-4 hover:line-clamp-none transition-all">
-                            "At Roshini Charitable Trust, our mission is to turn empathy into organized action. We don't just run a trust; we run a family of volunteers dedicated to the vision of 'அன்பால் இணைவோம்'. I invite you to join us, not just as a donor, but as a partner in this journey of humanity."
+                        <p
+                            class="text-gray-600 italic relative z-10 text-lg mb-6 line-clamp-4 hover:line-clamp-none transition-all">
+                            "At Roshini Charitable Trust, our mission is to turn empathy into organized action. We don't
+                            just run a trust; we run a family of volunteers dedicated to the vision of 'அன்பால்
+                            இணைவோம்'. I invite you to join us, not just as a donor, but as a partner in this journey of
+                            humanity."
                         </p>
-                        <div class="inline-flex items-center gap-2 text-gray-400">
-                            <i class="fas fa-envelope text-xl"></i> contact@roshinitrust.org
+                        <div class="flex flex-col gap-3">
+                            <a href="https://www.instagram.com/the_kavi_bharathi?igsh=b2p1M2VhdjlndWFm" target="_blank"
+                                class="inline-flex items-center gap-2 text-primary hover:text-secondary font-medium transition-colors">
+                                <i class="fab fa-instagram text-xl"></i> @the_kavi_bharathi
+                            </a>
+                            <div class="inline-flex items-center gap-2 text-gray-400">
+                                <i class="fas fa-envelope text-xl"></i> roshinicharitabletrust917@gmail.com
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -272,31 +358,50 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-1 lg:col-span-2">
                     <div class="flex items-center gap-2 mb-6">
-                        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">R</div>
-                        <span class="font-bold text-2xl text-white tracking-tight">Roshini <span class="text-primary">Charitable Trust</span></span>
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
+                            R</div>
+                        <span class="font-bold text-2xl text-white tracking-tight">Roshini <span
+                                class="text-primary">Charitable Trust</span></span>
                     </div>
                     <p class="text-gray-400 mb-6 max-w-md">
-                        Your small step can create their big smile. Join us in making a difference in the lives of those forgotten by society.
+                        Your small step can create their big smile. Join us in making a difference in the lives of those
+                        forgotten by society.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61587662511582" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Roshini_trust" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/roshini_charitabletrust/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/roshini-charitable-trust-5121373b5/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-6 border-b border-gray-800 pb-2">Quick Links</h4>
                     <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
-                        <li><a href="request-help.html" class="text-gray-400 hover:text-primary transition-colors">Request Help</a></li>
-                        <li><a href="celebrate.html" class="text-gray-400 hover:text-primary transition-colors">Celebrate</a></li>
-                        <li><a href="volunteer.html" class="text-gray-400 hover:text-primary transition-colors">Volunteer</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a>
+                        </li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About Us</a>
+                        </li>
+                        <li><a href="gallery.html"
+                                class="text-gray-400 hover:text-primary transition-colors">Gallery</a></li>
+                        <li><a href="request-help.html"
+                                class="text-gray-400 hover:text-primary transition-colors">Request Help</a></li>
+                        <li><a href="celebrate.html"
+                                class="text-gray-400 hover:text-primary transition-colors">Celebrate</a></li>
+                        <li><a href="volunteer.html"
+                                class="text-gray-400 hover:text-primary transition-colors">Volunteer</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-6 border-b border-gray-800 pb-2">Contact Us</h4>
                     <ul class="space-y-4">
@@ -319,8 +424,9 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
                 <p>&copy; 2026 Roshini Charitable Trust. All rights reserved.</p>
                 <div class="flex gap-4 mt-4 md:mt-0">
                     <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
@@ -334,7 +440,7 @@
     <script>
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
-        
+
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
@@ -361,10 +467,10 @@
                 if (rows.length >= 2) {
                     const status = rows[1][0].trim().toLowerCase();
                     const message = rows[1].slice(1).join(',').trim().replace(/^"|"$/g, '');
-                    
+
                     const alertBar = document.getElementById('emergency-alert');
                     const messageSpan = document.getElementById('emergency-message');
-                    
+
                     if (status === 'on') {
                         messageSpan.textContent = message;
                         alertBar.style.display = 'flex';
@@ -378,4 +484,5 @@
         });
     </script>
 </body>
+
 </html>

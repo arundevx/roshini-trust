@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Roshini Charitable Trust</title>
+    <meta name="description" content="Explore the gallery of Roshini Charitable Trust. See our impact, food distributions, and tree plantations in Trichy and Srirangam.">
+    <meta name="keywords" content="roshini charitable trust, roshinicharitabletrust, NGO in Trichy, charity Srirangam, connect with love">
+    <link rel="icon" type="image/png" href="images/rct-icon.png">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Roshini Charitable Trust | Connect with Love">
+    <meta property="og:description" content="Roshini Charitable Trust - Connect with Love. Your Small Step, Their Big Smile. Helping those forgotten by society in Trichy and Srirangam.">
+    <meta property="og:url" content="https://roshinicharitabletrust.org/index.html">
+    <meta property="og:type" content="website">
+    <!-- Tailwind CSS -->
+    <script src="tailwindcss.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10b981', // Emerald 500
+                        secondary: '#047857', // Emerald 700
+                        accent: '#f59e0b', // Amber 500
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <div class="sticky top-0 z-[60] w-full flex flex-col">
+        <!-- Emergency Alert Bar -->
+        <div id="emergency-alert" style="display: none;"
+            class="bg-red-600 text-white text-center py-2 px-4 text-sm font-semibold justify-center items-center gap-2 transition-all duration-300">
+            <span class="animate-pulse"><i class="fas fa-tint"></i></span>
+            <span id="emergency-message">Loading alert...</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="w-full z-50 glass shadow-sm transition-all duration-300" id="navbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer"
+                        onclick="window.location.href='index.html'">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
+                            R</div>
+                        <span class="font-bold text-2xl text-gray-900 tracking-tight">Roshini <span
+                                class="text-primary">Charitable Trust</span></span>
+                    </div>
+                    <div class="hidden lg:flex space-x-6 items-center">
+                        <a href="index.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Home</a>
+                        <a href="about.html"
+                            class="text-gray-600 hover:text-primary transition-colors font-medium">About Us</a>
+                        <a href="gallery.html" class="text-primary font-bold">Gallery</a>
+                        <a href="request-help.html"
+                            class="text-gray-600 hover:text-primary transition-colors font-medium">Request Help</a>
+                        <a href="celebrate.html"
+                            class="text-gray-600 hover:text-primary transition-colors font-medium">Celebrate</a>
+                        <a href="volunteer.html"
+                            class="text-gray-600 hover:text-primary transition-colors font-medium">Volunteer</a>
+                        <a href="#donate"
+                            class="bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full font-semibold transition-all transform hover:scale-105 shadow-md">Donate</a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="lg:hidden flex items-center">
+                        <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
+                <div class="px-4 pt-2 pb-6 space-y-2">
+                    <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Home</a>
+                    <a href="about.html"
+                        class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">About
+                        Us</a>
+                    <a href="gallery.html"
+                        class="block px-3 py-3 rounded-md text-base font-bold text-primary bg-primary/10">Gallery</a>
+                    <a href="request-help.html"
+                        class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Request
+                        Help</a>
+                    <a href="celebrate.html"
+                        class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Celebrate</a>
+                    <a href="volunteer.html"
+                        class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Volunteer</a>
+                    <a href="#donate"
+                        class="block px-3 py-3 text-center rounded-md text-base font-bold text-white bg-primary mt-4">Donate</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Header Section -->
+    <section class="relative pt-24 pb-16 bg-white overflow-hidden border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary border border-primary/20 font-semibold text-sm mb-4 uppercase tracking-wider">Our Impact</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">Image <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-600">Gallery</span></h1>
+            <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Glimpses of our daily activities, food distribution, and community support in Trichy and Srirangam.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.41 PM (1).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.41 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.42 PM (1).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.42 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.43 PM (1).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.43 PM (2).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.43 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.44 PM (1).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.44 PM (2).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.44 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.45 PM (1).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.45 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.46 PM (2).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.47 PM (1).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.47 PM (2).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.47 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.48 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.49 PM (1).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.49 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.50 PM (1).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.51 PM (1).jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.51 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
+                    <img src="images/WhatsApp Image 2026-06-17 at 10.33.52 PM.jpeg" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="bg-gray-900 text-white pt-20 pb-10" id="donate">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
+                            R</div>
+                        <span class="font-bold text-2xl text-white tracking-tight">Roshini <span
+                                class="text-primary">Charitable Trust</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Your small step can create their big smile. Join us in making a difference in the lives of those
+                        forgotten by society.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61587662511582" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Roshini_trust" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/roshini_charitabletrust/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/roshini-charitable-trust-5121373b5/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 border-b border-gray-800 pb-2">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a>
+                        </li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About Us</a>
+                        </li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-primary transition-colors">Gallery</a></li>
+                        <li><a href="request-help.html"
+                                class="text-gray-400 hover:text-primary transition-colors">Request Help</a></li>
+                        <li><a href="celebrate.html"
+                                class="text-gray-400 hover:text-primary transition-colors">Celebrate</a></li>
+                        <li><a href="volunteer.html"
+                                class="text-gray-400 hover:text-primary transition-colors">Volunteer</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 border-b border-gray-800 pb-2">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>23, Under Ground, Sathish complex, Mambazhasalai, Trichy – 620 005</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400">
+                            <i class="fas fa-phone text-primary"></i>
+                            <span>+91 99444 70511</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400">
+                            <i class="fas fa-phone text-primary"></i>
+                            <span>+91 82202 89504</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <span>roshinicharitabletrust917@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 Roshini Charitable Trust. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for mobile menu -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+
+    <!-- Script for Emergency Banner -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4LqWDC5VX3wfmviVHG0y1XonV8oY3iAlomsi-1V9Lv6PKhEjOta8YsCmMtzwpQS7TLYJcfhx4aJys/pub?gid=1239458077&single=true&output=csv';
+            try {
+                const response = await fetch(sheetUrl);
+                const data = await response.text();
+                const rows = data.split('\n').map(row => row.split(','));
+                if (rows.length >= 2) {
+                    const status = rows[1][0].trim().toLowerCase();
+                    const message = rows[1].slice(1).join(',').trim().replace(/^"|"$/g, '');
+
+                    const alertBar = document.getElementById('emergency-alert');
+                    const messageSpan = document.getElementById('emergency-message');
+
+                    if (status === 'on') {
+                        messageSpan.textContent = message;
+                        alertBar.style.display = 'flex';
+                    } else {
+                        alertBar.style.display = 'none';
+                    }
+                }
+            } catch (error) {
+                console.error('Error fetching emergency status:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>
