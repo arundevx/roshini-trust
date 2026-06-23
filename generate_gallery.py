@@ -3,12 +3,12 @@ import glob
 import re
 
 proj_dir = '/home/arun/Documents/projects/roshinitrust'
-img_dir = os.path.join(proj_dir, 'images')
+img_dir = os.path.join(proj_dir, 'images', 'gallery')
 
 # 1. Get all WhatsApp images
 images = []
 for file in sorted(os.listdir(img_dir)):
-    if file.startswith('WhatsApp Image'):
+    if file.startswith('WhatsApp Image') or file.endswith(('.jpg', '.jpeg', '.png')):
         images.append(file)
 
 print(f"Found {len(images)} WhatsApp images.")
@@ -61,7 +61,7 @@ footer = index_content[footer_start:]
 
 # Modify title and active links for gallery.html
 header = header.replace('<title>Roshini Charitable Trust | Connect with Love</title>', '<title>Gallery | Roshini Charitable Trust</title>')
-header = header.replace('<meta name="description" content="Roshini Charitable Trust - Connect with Love. Your Small Step, Their Big Smile. Helping those forgotten by society in Trichy and Srirangam.">', '<meta name="description" content="Explore the gallery of Roshini Charitable Trust. See our impact, food distributions, and tree plantations in Trichy and Srirangam.">')
+header = header.replace('<meta name="description" content="Roshini Charitable Trust - Connect with Love. Your Small Step, Their Big Smile. Helping those forgotten by society In all over tamilnadu.">', '<meta name="description" content="Explore the gallery of Roshini Charitable Trust. See our impact, food distributions, and tree plantations In all over tamilnadu.">')
 
 # Make Home inactive
 header = header.replace('<a href="index.html" class="text-primary font-bold">Home</a>', '<a href="index.html" class="text-gray-600 hover:text-primary transition-colors font-medium">Home</a>')
@@ -78,7 +78,7 @@ gallery_html = """
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary border border-primary/20 font-semibold text-sm mb-4 uppercase tracking-wider">Our Impact</span>
             <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight">Image <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-600">Gallery</span></h1>
-            <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Glimpses of our daily activities, food distribution, and community support in Trichy and Srirangam.</p>
+            <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Glimpses of our daily activities, food distribution, and community support In all over tamilnadu.</p>
         </div>
     </section>
 
@@ -90,7 +90,7 @@ gallery_html = """
 
 for img in images:
     gallery_html += f"""                <div class="break-inside-avoid overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group bg-white border border-gray-100">
-                    <img src="images/{img}" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    <img src="images/gallery/{img}" alt="Gallery Image" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
                 </div>\n"""
 
 gallery_html += """            </div>
